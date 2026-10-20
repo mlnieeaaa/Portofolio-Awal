@@ -1,0 +1,209 @@
+/* ====== Warna (gampang diganti di sini) ====== */
+:root {
+  --bg: #f1f5f0;         /* pink pucat */
+  --pink: #d9e8d8;       /* pink lembut */
+  --rose: #7fa889;       /* aksen rose */
+  --green: #1f4d3a;      /* hijau tua */
+  --green-soft: #b7d0b5; /* hijau sage muda */
+  --ink: #24382c;        /* teks */
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Nunito", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+h1, h2 {
+  font-family: "DM Serif Display", serif;
+  color: var(--green);
+  font-weight: 400;
+  margin: 0 0 1rem;
+}
+h1 { font-size: clamp(2.4rem, 6vw, 3.8rem); line-height: 1.1; }
+h2 { font-size: 2rem; }
+
+a { color: var(--rose); }
+a:hover { color: var(--green); }
+
+/* ====== Navbar ====== */
+nav {
+  background: var(--green);
+  padding: .9rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem 1rem;
+}
+.brand {
+  font-family: "DM Serif Display", serif;
+  color: var(--pink);
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+.brand:hover { color: #fff; }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+}
+nav ul a {
+  display: block;
+  color: #f6e3ea;
+  text-decoration: none;
+  padding: .4rem 1rem;
+  border-radius: 2rem;
+  transition: .25s;
+}
+nav ul a:hover { background: var(--pink); color: var(--green); }
+nav ul a.aktif { background: var(--rose); color: #fff; }
+
+/* ====== Marquee ====== */
+marquee {
+  display: block;
+  background: var(--pink);
+  color: var(--green);
+  padding: .6rem 0;
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+/* ====== Isi halaman ====== */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* ====== Hero ====== */
+.hero-table { width: 100%; border-collapse: collapse; }
+.hero-table td { vertical-align: middle; padding: 0; }
+.hero-teks { padding-right: 2rem; }
+.hero-foto { width: 38%; }
+.sapaan { color: var(--rose); font-weight: 700; margin: 0; }
+.foto {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  background: var(--pink);
+  border: 8px solid #fff;
+  border-radius: 50% 50% 1.5rem 1.5rem;
+  box-shadow: 0 0 0 3px var(--rose);
+  color: var(--green);
+  margin-left: auto;
+}
+
+/* ====== Tombol ====== */
+.tombol {
+  display: inline-block;
+  padding: .55rem 1.5rem;
+  border-radius: 2rem;
+  border: 2px solid var(--rose);
+  background: var(--rose);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .25s;
+}
+.tombol:hover { background: transparent; color: var(--rose); }
+.tombol-hijau { background: transparent; border-color: var(--green); color: var(--green); }
+.tombol-hijau:hover { background: var(--green); color: #fff; }
+
+/* ====== Kartu & Tabel ====== */
+.kartu {
+  background: #fff;
+  border: 2px solid var(--pink);
+  border-radius: 1.5rem;
+  padding: 1.75rem;
+  margin: 1.5rem 0;
+  transition: .25s;
+}
+.kartu:hover { border-color: var(--rose); }
+.kartu h2 { margin-top: 0; }
+.kartu p:last-child { margin-bottom: 0; }
+
+.tabel-cantik {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border: 2px solid var(--pink);
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.tabel-cantik th {
+  background: var(--green);
+  color: var(--pink);
+  font-weight: 600;
+  text-align: left;
+  padding: .85rem 1rem;
+}
+.tabel-cantik td {
+  padding: .85rem 1rem;
+  border-top: 1px solid var(--pink);
+}
+.tabel-cantik tbody tr:first-child td { border-top: none; }
+.tabel-cantik tbody tr { transition: .2s; }
+.tabel-cantik tbody tr:hover { background: var(--pink); }
+
+.badge-sage {
+  display: inline-block;
+  background: var(--green-soft);
+  color: var(--green);
+  border-radius: 2rem;
+  padding: .25rem .9rem;
+  font-weight: 600;
+  margin: .15rem .1rem;
+}
+
+/* ====== Form ====== */
+label { display: block; font-weight: 600; margin-bottom: .25rem; }
+input, textarea {
+  width: 100%;
+  font: inherit;
+  padding: .6rem .9rem;
+  border: 2px solid var(--pink);
+  border-radius: 1rem;
+  background: #fff;
+  color: var(--ink);
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--rose);
+  box-shadow: 0 0 0 4px rgba(214, 97, 138, .2);
+}
+
+/* ====== Footer ====== */
+footer {
+  background: var(--green);
+  color: var(--pink);
+  text-align: center;
+  padding: 1.5rem;
+}
+footer p { margin: 0; }
+
+/* ====== Fokus keyboard ====== */
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--rose);
+  outline-offset: 2px;
+}
+
+@media (max-width: 576px) {
+  body { font-size: 1rem; }
+  .hero-teks { padding-right: .75rem; }
+  main { padding: 2rem 1rem; }
+}
