@@ -84,11 +84,11 @@ marquee {
 
 /* ====== Isi halaman ====== */
 main {
+  flex: 1;
+  width: 100%;
   max-width: 960px;
   margin: 0 auto;
   padding: 3rem 1.5rem;
-  flex: 1;
-  width: 100%;
 }
 
 .beranda {
