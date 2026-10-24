@@ -1,11 +1,10 @@
-/* ====== Warna (gampang diganti di sini) ====== */
 :root {
-  --bg: #f1f5f0;         /* pink pucat */
-  --pink: #d9e8d8;       /* pink lembut */
-  --rose: #7fa889;       /* aksen rose */
-  --green: #1f4d3a;      /* hijau tua */
-  --green-soft: #b7d0b5; /* hijau sage muda */
-  --ink: #24382c;        /* teks */
+  --bg: #f1f5f0;         
+  --pink: #d9e8d8;      
+  --rose: #7fa889;      
+  --green: #1f4d3a;     
+  --green-soft: #b7d0b5; 
+  --ink: #24382c;       
 }
 
 * { box-sizing: border-box; }
@@ -36,7 +35,7 @@ h2 { font-size: 2rem; }
 a { color: var(--rose); }
 a:hover { color: var(--green); }
 
-/* ====== Navbar ====== */
+
 nav {
   background: var(--green);
   padding: .9rem 1.5rem;
@@ -72,7 +71,6 @@ nav ul a {
 nav ul a:hover { background: var(--pink); color: var(--green); }
 nav ul a.aktif { background: var(--rose); color: #fff; }
 
-/* ====== Isi halaman ====== */
 main {
   flex: 1;
   width: 100%;
@@ -81,7 +79,7 @@ main {
   padding: 3rem 1.5rem;
 }
 
-/* ====== Hero ====== */
+
 .hero-table { width: 100%; border-collapse: collapse; }
 .hero-table td { vertical-align: middle; padding: 0; }
 .hero-teks { padding-right: 2rem; }
@@ -101,7 +99,6 @@ main {
   margin-left: auto;
 }
 
-/* ====== Tombol ====== */
 .tombol {
   display: inline-block;
   padding: .55rem 1.5rem;
@@ -119,7 +116,6 @@ main {
 .tombol-hijau { background: transparent; border-color: var(--green); color: var(--green); }
 .tombol-hijau:hover { background: var(--green); color: #fff; }
 
-/* ====== Kartu & Tabel ====== */
 .kartu {
   background: #fff;
   border: 2px solid var(--pink);
@@ -167,7 +163,6 @@ main {
   margin: .15rem .1rem;
 }
 
-/* ====== Form ====== */
 label { display: block; font-weight: 600; margin-bottom: .25rem; }
 input, textarea {
   width: 100%;
@@ -183,8 +178,6 @@ input:focus, textarea:focus {
   border-color: var(--rose);
   box-shadow: 0 0 0 4px rgba(214, 97, 138, .2);
 }
-
-/* ====== Footer ====== */
 footer {
   background: var(--green);
   color: var(--pink);
@@ -193,7 +186,6 @@ footer {
 }
 footer p { margin: 0; font-size: .8rem; line-height: 1.3;}
 
-/* ====== Fokus keyboard ====== */
 a:focus-visible, button:focus-visible {
   outline: 3px solid var(--rose);
   outline-offset: 2px;
@@ -210,8 +202,8 @@ a:focus-visible, button:focus-visible {
 @media (max-width: 768px) {
   .hero-table { height: 70vh; height: calc(100dvh - 230px); }
   .hero-teks { padding-left: 1rem; }
-  .hero-foto { width: 46%; }
-  .foto { max-width: 100%; aspect-ratio: 3 / 4; border-width: 5px; box-shadow: 0 0 0 2px var(--rose); }
+  .hero-foto { width: 52%; }
+  .foto { max-width: 100%; aspect-ratio: 2 / 3; border-width: 5px; box-shadow: 0 0 0 2px var(--rose); }
 }
 
 @media (max-width: 480px) {
@@ -225,7 +217,6 @@ a:focus-visible, button:focus-visible {
   .tombol { padding: .5rem 1.25rem; }
 }
  
-/* ====== Layar sangat lebar ====== */
 @media (min-width: 1200px) {
   main { max-width: 1040px; }
 }
